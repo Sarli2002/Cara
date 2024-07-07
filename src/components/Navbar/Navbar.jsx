@@ -26,10 +26,10 @@ const Navbar = () => {
       </Link>
       <img onClick={dropdown_toggle} className='nav-dropdown' src={nav_dropdown} alt="" />
       <ul ref={menuRef} className="nav-menu">
-        <li onClick={()=>{setMenu("home")}}><Link to='/'>Home</Link>{menu==="home"?<hr/>:<></>}</li>
-        <li onClick={()=>{setMenu("shop")}}><Link to='/shop'>Shop</Link>{menu==="shop"?<hr/>:<></>}</li> 
-        {/* <li onClick={()=>{setMenu("about-us")}}><Link to='/about-us'>About Us</Link>{menu==="about-us"?<hr/>:<></>}</li>  */}
-        <Link to='/cart'><i class="fa-solid fa-cart-shopping"></i></Link>
+        <li onClick={()=>{setMenu("home")}}><Link to='/Cara'>Home</Link>{menu==="home"?<hr/>:<></>}</li>
+        <li onClick={()=>{setMenu("shop")}}><Link to='/Cara/shop'>Shop</Link>{menu==="shop"?<hr/>:<></>}</li> 
+        {/* <li onClick={()=>{setMenu("about-us")}}><Link to='/Cara/about-us'>About Us</Link>{menu==="about-us"?<hr/>:<></>}</li>  */}
+        <Link to='/Cara/cart'><i className="fa-solid fa-cart-shopping"></i></Link>
         <div className="nav-cart-count">{getTotalCartItems()}</div>
         
       </ul>
